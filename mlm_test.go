@@ -8,5 +8,5 @@ func Test(t *testing.T) {
 	mlm := NewMlm("test")
 	t.Logf("%#+v", mlm)
 
-	mlm.R()
+	println(mlm.R())
 }

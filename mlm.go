@@ -25,7 +25,7 @@ func (mlm *Mlm) ToJson() ([]byte, error) {
 	return buf, err
 }
 
-func (mlm *Mlm) R() {
+func (mlm *Mlm) R() string {
 	m1 := money.FromMinorUnits(123, currency.USD)
-	fmt.Printf("%#+v\n", m1)
+	return fmt.Sprintf("%#+v\n", m1)
 }
